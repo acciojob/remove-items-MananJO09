@@ -1,16 +1,10 @@
 //your JS code here. If required
-	var select =document.getElementById('colorSelect');
-	var removebtn=document.getElementById('btn');
+document.querySelector('input[type="button"]').addEventListener('click', function() {
+  // Get the reference to the colorSelect element
+  const colorSelect = document.getElementById('colorSelect');
 
-	btn.addEventListener('click', function()){
-		const selectedval=select.value;
+  // Remove the selected option from the colorSelect element
+  colorSelect.remove(colorSelect.selectedIndex);
+});
 
-		const options =select.options;
-		for (let i = 0; i < options.length; i++) {
-			if(options[i].value===selectedval){
-				colorSelect.remove(i);
-				break;
-			}
-		}
-	});
 
