@@ -8,7 +8,7 @@
 		const options =select.options;
 		for (let i = 0; i < options.length; i++) {
 			if(options[i].value===selectedval){
-				colorSelect[i].remove(i);
+				colorSelect.remove(i);
 				break;
 			}
 		}
